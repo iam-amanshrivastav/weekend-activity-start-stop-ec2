@@ -1,10 +1,13 @@
 
-# EC2 Weekend Start/Stop activity Automated System
+# EC2 Instances Weekend Start/Stop activity done by Automated System
 
 ## Overview
 This project automates EC2 instance management based on **Snoozing Tags** using AWS Lambda functions. It ensures seamless automation of instance start/stop operations while maintaining a detailed log of all changes in Amazon S3.
+
 It will store the state of all the instances in the S3 Bucket.
+
 It will start all the instances which were in stopped state and which Snoozing TAGs value is "Yes/No/NA/NULL/ ". This start funtion remove all the Values of Snoozing and kept it "". So that server should start the ec2 instances.
+
 Last Restored funtion will restored all the changes which were made by the start funtion as well as it restore the tags value of those ec2 instances.
 
 
